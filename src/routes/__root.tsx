@@ -77,16 +77,36 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Hành Trình Ánh Sáng — Vương Quốc Ánh Sáng 5D" },
+      {
+        name: "description",
+        content:
+          "Một hành trình trở về với Ánh Sáng bên trong — Thức tỉnh, Chữa lành, Sáng tạo, Phụng sự, Hợp nhất. Cùng nhau kiến tạo Vương Quốc Ánh Sáng 5D.",
+      },
+      { name: "author", content: "Hành Trình Ánh Sáng" },
+      {
+        property: "og:title",
+        content: "Hành Trình Ánh Sáng — Vương Quốc Ánh Sáng 5D",
+      },
+      {
+        property: "og:description",
+        content:
+          "Một hành trình trở về với Ánh Sáng bên trong — Thức tỉnh • Chữa lành • Sáng tạo • Phụng sự • Hợp nhất.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Karla:wght@300;400;500;600;700&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
